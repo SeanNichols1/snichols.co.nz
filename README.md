@@ -1,3 +1,3 @@
 # snichols.co.nz
- 
-5:13 PM
+# This is a website that is hosted on https://snichols.co.nz
+# Incorporating what I've learnt through Linkedin Learning with past projects. 

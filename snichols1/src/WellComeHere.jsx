@@ -1,5 +1,5 @@
 const WellComeHere = (props) => { //This is a hook
-    return <p>This is a paragraph from a hook {props.name}</p>
+    return <p><span>This is a paragraph from a hook {props.name}</span></p>
 }
 /* Hooks into react */
 export default WellComeHere;
