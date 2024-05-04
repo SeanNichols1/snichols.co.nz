@@ -1,12 +1,12 @@
 [
   {
     "id": 0,
-    "name": "Sean",
-    "slug": "sean"
+    "name": "Haunted Pikachu",
+    "slug": "hauntedPikachu"
   },
   {
     "id": 1,
-    "name": "Not Sean",
-    "slug": "not-sean"
+    "name": "Cursed Pikachu",
+    "slug": "cursedPikachu"
   }
 ]
