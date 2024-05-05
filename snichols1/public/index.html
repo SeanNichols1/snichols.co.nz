@@ -3,55 +3,55 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
     <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-T6ZXM690HF")</script>
-    <link rel="icon" type="image/x-icon" href="/lock.ico" />
+    <link rel="icon" type="image/x-icon" href="/sean.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SNichols.co.nz</title>
 </head>
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div> <!-- This has to be called root for it to work. Apparently the line below isn't needed, was causing a console error. Error resolved once removed'-->
-        <!-- <script type="module" src="/src/main.jsx"></script> -->
+        <div id="root"></div> <!-- This div has to be called root for it to work. Apparently the line commented out below isn't needed, was causing a console error. Error resolved once removed'-->
+        <script type="module" src="/src/main.jsx"></script>
         <script type="module">import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js"; import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-analytics.js"; const firebaseConfig = { apiKey: "AIzaSyD9ELwbmn5yaKz5Z043ViVsEx9QC-XLwaE", authDomain: "snichols-f6e64.firebaseapp.com", projectId: "snichols-f6e64", storageBucket: "snichols-f6e64.appspot.com", messagingSenderId: "395229469519", appId: "1:395229469519:web:f7496447c1c701342bc33a", measurementId: "G-T6ZXM690HF" }, app = initializeApp(firebaseConfig), analytics = getAnalytics(app)</script>
         <video autoplay muted loop id="myVideo">
             <source src="https://rickroll.it/rickroll.mp4" type="video/mp4">
         </video>
         <style>
-            /* Style the video: 100% width and height to cover the entire window */
-            #myVideo {
-                position: fixed;
-                right: 0;
-                bottom: 0;
-                min-width: 100%;
-                min-height: 100%;
-                object-fit: cover;
-                z-index:-1;
-            }
+        /* Style the video: 100% width and height to cover the entire window */
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
 
-            /* Add some content at the bottom of the video/page */
-            .content {
-                position: fixed;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.5);
-                color: #f1f1f1;
-                width: 100%;
-                padding: 20px;
-            }
+        /* Add some content at the bottom of the video/page */
+        .content {
+            position: fixed;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 100%;
+            padding: 20px;
+        }
 
-            /* Style the button used to pause/play the video */
-            #myBtn {
-                width: 200px;
-                font-size: 18px;
-                padding: 10px;
-                border: none;
-                background: #000;
-                color: #fff;
-                cursor: pointer;
-            }
+        /* Style the button used to pause/play the video */
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
 
-                #myBtn:hover {
-                    background: #ddd;
-                    color: black;
-                }
+            #myBtn:hover {
+                background: #ddd;
+                color: black;
+            }
         </style>
     </body>
 </html>

@@ -1,0 +1,14 @@
+nav summary + ul li {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; /* Overrules other styles?*/
+}
+nav details li a{
+    font-size: 1em;
+}
+u{
+    color: yellow;
+}
+u:hover {
+    color: darkorange;
+    font-weight: 500;
+}

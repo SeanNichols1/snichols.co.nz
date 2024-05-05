@@ -2,11 +2,13 @@
   {
     "id": 0,
     "name": "Haunted Pikachu",
-    "slug": "hauntedPikachu"
+    "slug": "hauntedPikachu",
+    "bio": "he has seen some things. So don't click on this text"
   },
   {
     "id": 1,
     "name": "Cursed Pikachu",
-    "slug": "cursedPikachu"
+    "slug": "cursedPikachu",
+    "bio": "he has done some things. So you better not left-click on me"
   }
 ]
