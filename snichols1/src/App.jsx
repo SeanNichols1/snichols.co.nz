@@ -59,7 +59,7 @@ function App() {
         <div className="container">
             <article>
                 <hgroup>
-                    <h1><span style={{ color: "white", backgroundColor: "orange" }} >SNichols.co.nz</span></h1>
+                    <h1><span style={{ padding:"25px",paddingBottom:"5px",color: "white", backgroundColor: "orange" }} >SNichols.co.nz</span></h1>
                     <Nav />
                     <h2><span>{name}'s Website</span></h2>
                     <p><span>This website uses <b>React</b><br />You need to enable JavaScript to run this app.<br />If you can read this, you have Javascript enabled</span></p>
