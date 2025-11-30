@@ -4,19 +4,27 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 function Home() {
     return (
-        <p>Welcome</p>
+        <div>
+            <p>Welcome to SNichols.co.nz</p>
+        </div>
     );
 }
 
 function Portfolio() {
     return (
-        <p>Coming soon</p>
+        <div>
+            <p>Coming soon</p>
+            <p>This website uses React</p>
+        </div>
     );
 }
 
-function Old() {
+function Contact() {
     return (
-        <p>Coming soon</p>
+        <div>
+            <br />
+            <b>Email: </b><a href="mailto:postmaster@snichols.co.nz">postmaster@snichols.co.nz</a>
+        </div>
     );
 }
 
@@ -29,13 +37,13 @@ function App() {
                   <Link to="/">Home</Link> |{"  "}
                   <a href="https://www.linkedin.com/in/sean-nichols-nz/" target="_blank">LinkedIn</a> |{"  "}
                   <Link to="/Portfolio">Portfolio</Link> |{"  "}
-                  <Link to="/Old">Old Site</Link>
+                  <Link to="/Contact">Contact</Link>
                 </nav>
           </div>
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="Portfolio" element={<Portfolio />} />
-              <Route path="Old" element={<Old />} />
+              <Route path="Contact" element={<Contact />} />
           </Routes>
     </BrowserRouter>
   )
