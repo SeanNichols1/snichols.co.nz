@@ -3,9 +3,9 @@
     "",
     "\\snichols1",
     "\\snichols1\\public",
-    "\\snichols1\\public\\images",
-    "\\snichols1\\src"
+    "\\snichols1\\src",
+    "\\snichols1\\src\\assets"
   ],
-  "SelectedNode": "\\snichols1\\src\\App.scss",
+  "SelectedNode": "\\snichols1\\src\\assets",
   "PreviewInSolutionExplorer": false
 }
