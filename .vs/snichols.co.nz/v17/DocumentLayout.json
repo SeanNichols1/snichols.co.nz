@@ -3,44 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\HauntedPika.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\HauntedPika.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\Source\\Repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.scss||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\App.scss||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Modals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\Modals.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\main.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\public\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Modals.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\Modals.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Nav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\Nav.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\Source\\Repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\HauntedPika.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\HauntedPika.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\WellComeHere.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\WellComeHere.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Support.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\Support.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:snichols1\\src\\App.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,36 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.jsx",
-              "RelativeDocumentMoniker": "snichols1\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.jsx",
-              "RelativeToolTip": "snichols1\\src\\App.jsx",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAD0AAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-04T05:03:18.916Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.scss",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.scss",
-              "RelativeDocumentMoniker": "snichols1\\src\\App.scss",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.scss",
-              "RelativeToolTip": "snichols1\\src\\App.scss",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
-              "WhenOpened": "2024-05-05T07:21:57.624Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -90,101 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HauntedPika.css",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\HauntedPika.css",
-              "RelativeDocumentMoniker": "snichols1\\src\\HauntedPika.css",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\HauntedPika.css",
-              "RelativeToolTip": "snichols1\\src\\HauntedPika.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-05T07:33:01.609Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Modals.css",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Modals.css",
-              "RelativeDocumentMoniker": "snichols1\\src\\Modals.css",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Modals.css",
-              "RelativeToolTip": "snichols1\\src\\Modals.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Title": "App.css",
+              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.css",
+              "RelativeDocumentMoniker": "snichols1\\src\\App.css",
+              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.css",
+              "RelativeToolTip": "snichols1\\src\\App.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-05T07:31:08.73Z",
+              "WhenOpened": "2025-11-30T01:05:12.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HauntedPika.jsx",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\HauntedPika.jsx",
-              "RelativeDocumentMoniker": "snichols1\\src\\HauntedPika.jsx",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\HauntedPika.jsx",
-              "RelativeToolTip": "snichols1\\src\\HauntedPika.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-04T08:47:40.389Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Nav.jsx",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Nav.jsx",
-              "RelativeDocumentMoniker": "snichols1\\src\\Nav.jsx",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Nav.jsx",
-              "RelativeToolTip": "snichols1\\src\\Nav.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-05T00:00:58.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Support.jsx",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Support.jsx",
-              "RelativeDocumentMoniker": "snichols1\\src\\Support.jsx",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Support.jsx",
-              "RelativeToolTip": "snichols1\\src\\Support.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-04T09:32:22.628Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Modals.jsx",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Modals.jsx",
-              "RelativeDocumentMoniker": "snichols1\\src\\Modals.jsx",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\Modals.jsx",
-              "RelativeToolTip": "snichols1\\src\\Modals.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-04T22:05:38.55Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WellComeHere.jsx",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\WellComeHere.jsx",
-              "RelativeDocumentMoniker": "snichols1\\src\\WellComeHere.jsx",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\WellComeHere.jsx",
-              "RelativeToolTip": "snichols1\\src\\WellComeHere.jsx",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2024-05-04T11:37:00.638Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\public\\index.html",
-              "RelativeDocumentMoniker": "snichols1\\public\\index.html",
-              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\public\\index.html",
-              "RelativeToolTip": "snichols1\\public\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
+              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\index.html",
+              "RelativeDocumentMoniker": "snichols1\\index.html",
+              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\index.html",
+              "RelativeToolTip": "snichols1\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-05-04T05:02:56.516Z",
+              "WhenOpened": "2025-11-30T00:58:54.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "main.jsx",
+              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\main.jsx",
+              "RelativeDocumentMoniker": "snichols1\\src\\main.jsx",
+              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\main.jsx",
+              "RelativeToolTip": "snichols1\\src\\main.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-30T00:49:24.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.jsx",
+              "RelativeDocumentMoniker": "snichols1\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\Sean N\\source\\repos\\SeanNichols1\\snichols.co.nz\\snichols1\\src\\App.jsx",
+              "RelativeToolTip": "snichols1\\src\\App.jsx",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2025-11-30T00:49:19.835Z",
               "EditorCaption": ""
             }
           ]
