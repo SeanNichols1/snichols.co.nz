@@ -1,3 +1,14 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
 :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -19,6 +30,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    box-sizing: border-box; /* ensure padding is included in 100vh to avoid overflow */
     justify-content: flex-start;
     align-items: center;
 }
@@ -37,7 +49,9 @@ a, a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column; /* keep content stacked top-to-bottom */
+  justify-content: flex-start; /* do not vertically center the root */
+  align-items: stretch; /* allow #root to take full width */
   min-width: 320px;
   min-height: 100vh;
 }
@@ -72,9 +86,10 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: inherit;
   }
   button {
-    background-color: #f9f9f9;
+     background-color: #f9f9f9;
+     color: #213547;
   }
 }

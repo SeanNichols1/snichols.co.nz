@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Welcome</title>
+    <style>
+        :root {
+            --bg-1: #242424;
+            --bg-2: #242424;
+            --card-border: rgba(255,255,255,0.06);
+            --gap: 12px;
+            --radius: 14px;
+        }
+
+        html, body {
+            height: 100dvh;
+            margin: 0;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-2) 100%);
+            color: #fff;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+            box-sizing: border-box;
+        }
+
+        #login-view {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        #dashboard-view {
+            display: none;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 100%;
+            padding: var(--gap);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: var(--gap);
+            max-width: 1100px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        a.button, .auth-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: #ffffff;
+            background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            border-radius: var(--radius);
+            border: 1px solid var(--card-border);
+            padding: 14px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            box-shadow: 0 8px 20px rgba(2,6,23,0.6);
+            transition: transform 150ms cubic-bezier(.2,.9,.3,1), box-shadow 150ms;
+            cursor: pointer;
+            text-align: center;
+            min-height: 0;
+        }
+
+            a.button:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 18px 40px rgba(2,6,23,0.75);
+            }
+
+        .login-card {
+            background: rgba(255,255,255,0.03);
+            padding: 40px;
+            border-radius: var(--radius);
+            border: 1px solid var(--card-border);
+            text-align: center;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        #user-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            background: linear-gradient(to top, var(--bg-1), transparent);
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.4);
+            cursor: pointer;
+            z-index: 100;
+            display: none;
+            transition: color 0.2s;
+        }
+
+        #user-bar:hover {
+            color: var(--accent-1);
+        }
+
+        .wrap {
+            padding-bottom: 60px;
+        }
+
+        #status-msg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.9rem;
+            opacity: 0.6;
+            display: none;
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .wrap {
+                height: min(700px, 86vh);
+            }
+        }
+    </style>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6ZXM690HF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T6ZXM690HF');
+</script>
+<body>
+
+    <div id="login-view">
+        <div class="login-card">
+            <h2 style="margin-top:0">Welcome</h2>
+            <button id="btn-login" class="auth-btn">Sign in with Google</button>
+        </div>
+    </div>
+
+    <div id="user-bar">Sign Out</div>
+    <div id="status-msg">Loading secure links...</div>
+
+    <main id="dashboard-view" class="wrap"></main>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getFirestore, collection, getDocs, query, orderBy } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyD9ELwbmn5yaKz5Z043ViVsEx9QC-XLwaE",
+            authDomain: "snichols-f6e64.firebaseapp.com",
+            projectId: "snichols-f6e64",
+            storageBucket: "snichols-f6e64.firebasestorage.app",
+            messagingSenderId: "395229469519",
+            appId: "1:395229469519:web:f7496447c1c701342bc33a",
+            measurementId: "G-T6ZXM690HF"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const provider = new GoogleAuthProvider();
+
+        const loginView = document.getElementById('login-view');
+        const dashboardView = document.getElementById('dashboard-view');
+        const userBar = document.getElementById('user-bar');
+        const statusMsg = document.getElementById('status-msg');
+
+        async function loadLinksFromFirestore() {
+            statusMsg.textContent = "Verifying permissions...";
+            statusMsg.style.display = 'block';
+            dashboardView.innerHTML = ''; 
+
+            try {
+                const q = query(collection(db, "links"), orderBy("name", "desc"));
+                const querySnapshot = await getDocs(q);
+
+                if (querySnapshot.empty) {
+                    statusMsg.textContent = "No links available.";
+                    return;
+                }
+
+                querySnapshot.forEach((doc) => {
+                    const data = doc.data();
+                    const a = document.createElement('a');
+                    a.className = 'button';
+                    a.href = data.url;
+                    a.textContent = data.name;
+                    a.target = "_blank"; 
+                    dashboardView.appendChild(a);
+                });
+
+                statusMsg.style.display = 'none';
+
+            } catch (e) {
+                // Error handling
+                console.error("Firestore Access Error:", e);
+
+                // Error message
+                dashboardView.style.display = 'none';
+                statusMsg.style.display = 'block';
+                statusMsg.innerHTML = `
+      <div style="color: #ff8080; background: rgba(255,0,0,0.1); padding: 20px; border-radius: 10px; border: 1px solid rgba(255,0,0,0.2);">
+        <strong>Access Denied</strong><br>
+        Your account does not have permission to view these records.
+      </div>
+    `;
+
+                // Timeout
+                setTimeout(() => {
+                    signOut(auth);
+                }, 3000);
+            }
+        }
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                // Hide login and show links
+                loginView.style.display = 'none';
+                dashboardView.style.display = 'grid';
+                userBar.style.display = 'block';
+                userBar.textContent = `Logout (${user.email})`;
+
+                // Firestore to load the internal IP addresses
+                loadLinksFromFirestore();
+            } else {
+                dashboardView.style.display = 'none';
+                loginView.style.display = 'flex';
+                userBar.style.display = 'none';
+            }
+        });
+
+        document.getElementById('btn-login').onclick = () => signInWithPopup(auth, provider);
+        userBar.onclick = async () => {
+            try {
+                await signOut(auth);
+                window.location.replace("https://snichols.co.nz/");
+            } catch (error) {
+                console.error("Logout failed", error);
+            }
+        };
+    </script>
+</body>
+</html>
