@@ -80,6 +80,257 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.eyebrow,
+.page-title {
+    display: none;
+}
+
+.copilot-toggle {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 0.65rem 1rem;
+    background: #242424;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.copilot-toggle:hover,
+.copilot-toggle:focus-visible,
+.home-login-link:hover,
+.home-login-link:focus-visible {
+    border-color: #75d5bd;
+}
+
+.copilot-toggle:focus-visible,
+.home-login-link:focus-visible {
+    outline: 3px solid #75d5bd;
+    outline-offset: 3px;
+}
+
+.home-login-link {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 0.65rem 1rem;
+    background: #242424;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#root:has(.app-shell--copilot) {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    align-items: stretch;
+}
+
+body:has(.app-shell--copilot) {
+    color: #202b39;
+    background: #f4f2ed;
+}
+
+.app-shell--copilot {
+    --copilot-background: #f4f2ed;
+    --copilot-text: #202b39;
+    --copilot-muted: #516174;
+    --copilot-border: #d9ded9;
+    --copilot-card-border: #e1e5df;
+    --copilot-card: rgba(255, 255, 255, 0.82);
+    --copilot-accent: #087b66;
+    --copilot-accent-hover: #066653;
+    color-scheme: light;
+    min-height: 100vh;
+    width: 100%;
+    padding: clamp(1.5rem, 5vw, 4rem);
+    color: var(--copilot-text);
+    background:
+        radial-gradient(ellipse at 80% 0%, rgba(165, 218, 204, 0.38), transparent 38rem),
+        var(--copilot-background);
+}
+
+.app-shell--copilot #main {
+    max-width: 62rem;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem 2rem;
+    border-bottom: 1px solid var(--copilot-border);
+}
+
+.app-shell--copilot #main h1 {
+    margin: 0;
+    color: var(--copilot-text);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    letter-spacing: -0.06em;
+}
+
+.app-shell--copilot nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+
+.app-shell--copilot nav a {
+    padding: 0.45rem 0;
+    color: var(--copilot-muted);
+    transition: color 160ms ease;
+}
+
+.app-shell--copilot nav a:hover,
+.app-shell--copilot nav a:focus-visible {
+    color: var(--copilot-accent);
+}
+
+.app-shell--copilot .nav-separator {
+    display: none;
+}
+
+.app-shell--copilot .page-content {
+    width: 100%;
+    max-width: 62rem;
+    margin: clamp(2.5rem, 8vw, 6rem) auto;
+}
+
+.app-shell--copilot .page-section {
+    max-width: 48rem;
+    padding: clamp(1.5rem, 5vw, 3.5rem);
+    border: 1px solid var(--copilot-card-border);
+    border-radius: 1.5rem;
+    background: var(--copilot-card);
+    box-shadow: 0 1.5rem 4rem rgba(37, 55, 49, 0.08);
+}
+
+.app-shell--copilot .eyebrow {
+    display: block;
+    margin: 0 0 1rem;
+    color: var(--copilot-accent);
+    font-size: 0.75rem;
+    font-weight: 750;
+    letter-spacing: 0.14em;
+}
+
+.app-shell--copilot .page-title {
+    display: block;
+    margin: 0 0 1.25rem;
+    color: var(--copilot-text);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+}
+
+.app-shell--copilot .page-section > p:not(.eyebrow):not(.home-welcome) {
+    color: var(--copilot-muted);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.app-shell--copilot .home-welcome {
+    margin: 0 0 1.25rem;
+    color: var(--copilot-text);
+    font-size: clamp(2rem, 6vw, 3.25rem);
+    font-weight: 700;
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+}
+
+.app-shell--copilot .page-section a:not(.home-login-link) {
+    color: var(--copilot-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.app-shell--copilot .home-login-link {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    z-index: 1000;
+    border: 1px solid var(--copilot-accent);
+    border-radius: 999px;
+    padding: 0.65rem 1rem;
+    background: var(--copilot-accent);
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background 160ms ease;
+}
+
+.app-shell--copilot .home-login-link:hover {
+    background: var(--copilot-accent-hover);
+}
+
+.copilot-toggle--active {
+    border-color: #087b66;
+    background: #087b66;
+    color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    body:has(.app-shell--copilot) {
+        color: #e7edf2;
+        background: #141a20;
+    }
+
+    .app-shell--copilot {
+        --copilot-background: #141a20;
+        --copilot-text: #e7edf2;
+        --copilot-muted: #aab8c5;
+        --copilot-border: #35414b;
+        --copilot-card-border: #35414b;
+        --copilot-card: rgba(34, 44, 54, 0.88);
+        --copilot-accent: #75d5bd;
+        --copilot-accent-hover: #56b99f;
+        color-scheme: dark;
+        background:
+            radial-gradient(ellipse at 80% 0%, rgba(49, 112, 97, 0.28), transparent 38rem),
+            var(--copilot-background);
+    }
+
+    .app-shell--copilot .page-section {
+        box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+    }
+
+    .copilot-toggle--active {
+        border-color: #75d5bd;
+        background: #75d5bd;
+        color: #141a20;
+    }
+}
+
+@media (max-width: 560px) {
+    .app-shell--copilot {
+        padding: 1.25rem;
+    }
+
+    .app-shell--copilot #main {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .app-shell--copilot nav {
+        gap: 0.35rem 0.85rem;
+    }
+
+    .app-shell--copilot .page-content {
+        margin-top: 2rem;
+    }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

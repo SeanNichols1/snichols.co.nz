@@ -1,71 +1,76 @@
-import { createRoot } from 'react-dom/client';
+import { useState } from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-
-const buttonStyle = {
-    position: 'fixed',
-    bottom: '2rem',
-    left: '50%',
-    transform: 'translateX(-50%)',
-    padding: '10px 20px',
-    backgroundColor: '#242424',
-    color: '#ffffffde',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-    zIndex: 1000
-};
 
 function Home() {
     return (
-        <div>
-            <p>Welcome to SNichols.co.nz</p>
-            <a href="/admin.html">
-                <button style={buttonStyle}>
-                    Login
-                </button>
+        <section className="page-section">
+            <p className="eyebrow">PERSONAL WEBSITE</p>
+            <p className="home-welcome">Welcome to SNichols.co.nz</p>
+            <a className="home-login-link" href="/admin.html">
+                Login
             </a>
-        </div>
+        </section>
     );
 }
 
 function Portfolio() {
     return (
-        <div>
-            <p>Coming soon</p>
+        <section className="page-section">
+            <p className="eyebrow">SELECTED WORK</p>
+            <h2 className="page-title">Portfolio</h2>
             <p>This website uses React</p>
-        </div>
+        </section>
     );
 }
 
 function Contact() {
     return (
-        <div>
+        <section className="page-section">
+            <p className="eyebrow">GET IN TOUCH</p>
+            <h2 className="page-title">Contact</h2>
             <br />
             <b>Email: </b><a href="mailto:postmaster@snichols.co.nz">postmaster@snichols.co.nz</a>
-        </div>
+        </section>
     );
 }
 
 function App() {
-  return (
-      <BrowserRouter>
-          <div id="main">
-              <h1>Sean Nichols</h1>
-              <nav>
-                  <Link to="/">Home</Link> |{"  "}
-                  <a href="https://www.linkedin.com/in/sean-nichols-nz/" target="_blank">LinkedIn</a> |{"  "}
-                  <Link to="/Portfolio">Portfolio</Link> |{"  "}
-                  <Link to="/Contact">Contact</Link>
-                </nav>
-          </div>
-          <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="Portfolio" element={<Portfolio />} />
-              <Route path="Contact" element={<Contact />} />
-          </Routes>
-    </BrowserRouter>
-  )
+    const [copilotMode, setCopilotMode] = useState(false);
+
+    return (
+        <BrowserRouter>
+            <div className={`app-shell${copilotMode ? ' app-shell--copilot' : ''}`}>
+                <header id="main" className="site-header">
+                    <h1>Sean Nichols</h1>
+                    <nav aria-label="Main navigation">
+                        <Link to="/">Home</Link>
+                        <span className="nav-separator"> | </span>
+                        <a href="https://www.linkedin.com/in/sean-nichols-nz/" target="_blank" rel="noreferrer">LinkedIn</a>
+                        <span className="nav-separator"> | </span>
+                        <Link to="/Portfolio">Portfolio</Link>
+                        <span className="nav-separator"> | </span>
+                        <Link to="/Contact">Contact</Link>
+                    </nav>
+                </header>
+                <main className="page-content">
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="Portfolio" element={<Portfolio />} />
+                        <Route path="Contact" element={<Contact />} />
+                    </Routes>
+                </main>
+            </div>
+            <button
+                className={`copilot-toggle${copilotMode ? ' copilot-toggle--active' : ''}`}
+                type="button"
+                aria-pressed={copilotMode}
+                aria-label={`${copilotMode ? 'Turn off' : 'Turn on'} Copilot visual changes`}
+                onClick={() => setCopilotMode((enabled) => !enabled)}
+            >
+                Copilot
+            </button>
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
