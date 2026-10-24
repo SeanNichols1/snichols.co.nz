@@ -35,7 +35,7 @@ function Contact() {
 }
 
 function App() {
-    const [copilotMode, setCopilotMode] = useState(false);
+    const [copilotMode, setCopilotMode] = useState(true);
 
     return (
         <BrowserRouter>
@@ -67,7 +67,7 @@ function App() {
                 aria-label={`${copilotMode ? 'Turn off' : 'Turn on'} Copilot visual changes`}
                 onClick={() => setCopilotMode((enabled) => !enabled)}
             >
-                Copilot
+                {copilotMode ? 'Original' : 'Copilot'}
             </button>
         </BrowserRouter>
     );

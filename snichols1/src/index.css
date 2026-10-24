@@ -88,8 +88,9 @@ button:focus-visible {
 .copilot-toggle {
     position: fixed;
     right: 1rem;
-    bottom: 1rem;
+    bottom: calc(1rem + 2.9rem + 0.75rem);
     z-index: 1000;
+    height: 2.9rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     padding: 0.65rem 1rem;
@@ -113,9 +114,13 @@ button:focus-visible {
 
 .home-login-link {
     position: fixed;
-    left: 1rem;
+    right: 1rem;
     bottom: 1rem;
     z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.9rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 999px;
     padding: 0.65rem 1rem;
@@ -257,14 +262,15 @@ body:has(.app-shell--copilot) {
 
 .app-shell--copilot .home-login-link {
     position: fixed;
-    left: 1rem;
+    right: 1rem;
+    left: auto;
     bottom: 1rem;
     z-index: 1000;
     border: 1px solid var(--copilot-accent);
     border-radius: 999px;
     padding: 0.65rem 1rem;
     background: var(--copilot-accent);
-    color: #ffffff;
+    color: #141a20;
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: background 160ms ease;
